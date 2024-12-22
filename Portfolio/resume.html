@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David"s Resume | Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-button {
+            background-color: #f0f0f0;
+            border: 2px solid #e0e0e0;
+            border-radius: 20px;
+            padding: 8px 15px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .skill-button span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .skill-button:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.05);
+        }
+        
+        .skill-button:active {
+            transform: scale(0.95);
+        }
+        </style>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="/placeholder.svg?height=50&width=50" alt="David"s Profile Picture" class="profile-pic">
+                    <span>David"s Portfolio</span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html" class="active">Resume</a></li>
+                    <li><a href="biodata.html">Biodata</a></li>
+                    
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>David"s Resume</h1>
+                <p>Experienced Software Developer with a passion for creating efficient and user-friendly applications</p>
+            </section>
+
+            <section id="professional-experience" class="resume-section">
+                <h2>Professional Experience</h2>
+                <div class="experience-item">
+                    <h3>Software Developer</h3>
+                    <p class="date">2022 - 2024</p>
+                    <ul>
+                        <li>Developed and maintained web applications using HTML, CSS, and JavaScript</li>
+                        <li>Collaborated with cross-functional teams to deliver high-quality software solutions</li>
+                        <li>Implemented responsive design techniques to ensure optimal user experience across devices</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Intern</h3>
+                    <p class="date">2020 - 2022</p>
+                    <ul>
+                        <li>Assisted in the development of various web projects</li>
+                        <li>Gained hands-on experience with front-end technologies and best practices</li>
+                        <li>Participated in code reviews and contributed to improving development processes</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="education" class="resume-section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor's in Computer Science</h3>
+                    <p>SMVITM (Shri Madhwa Vadiraja Institute of Technology and Management)</p>
+                    <p class="date">2016 - 2020</p>
+                </div>
+            </section>
+
+            <section id="skills" class="resume-section">
+                <h2>Skills</h2>
+                <div class="skill-list">
+                    <button class="skill-button"><span>🌐 HTML5</span></button>
+                    <button class="skill-button"><span>🎨 CSS3</span></button>
+                    <button class="skill-button"><span>✨ JavaScript</span></button>
+                    <button class="skill-button"><span>⚛️ React</span></button>
+                    <button class="skill-button"><span>🚀 Node.js</span></button>
+                    <button class="skill-button"><span>📊 SQL</span></button>
+                    <button class="skill-button"><span>🔀 Git</span></button>
+                    <button class="skill-button"><span>📱 Responsive Design</span></button>
+                </div>
+            </section>
+
+            <section id="certifications" class="resume-section">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Web Development Bootcamp - Udemy</li>
+                    <li>JavaScript Algorithms and Data Structures - freeCodeCamp</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 David"s Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David's Portfolio | Resume Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="2.png" alt="David's Profile Picture" class="profile-pic">
+                    <span>David's Portfolio</span>
+                </div>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="biodata.html">Biodata</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Explore my professional journey and personal achievements</p>
+                <a href="#about" class="cta-button">Learn More</a>
+            </section>
+
+            <section id="about" class="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="2.png" alt="David's Full Picture" class="about-image">
+                    <div class="about-text">
+                        <p>Hello! I'm David, a passionate professional with expertise in web development and design. With years of experience in creating user-friendly and visually appealing websites, I strive to deliver high-quality solutions that meet client needs and exceed expectations.</p>
+                        <p>Feel free to explore my resume and biodata to learn more about my skills, experiences, and achievements.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="skills">
+                <h2>My Skills</h2>
+                <ul class="skill-list">
+                    <li>HTML5 🌐</li>
+                    <li>CSS3 🎨</li>
+                    <li>JavaScript 💻</li>
+                    <li>React ⚛️</li>
+                    <li>Node.js 🚀</li>
+                    <li>UI/UX Design 🎨</li>
+                </ul>
+            </section>
+
+            <section id="contact" class="contact">
+                <h2>Get in Touch</h2>
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 David's Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David - Personal Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --text-color: #333;
+            --background-color: #f4f6f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .profile-header {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.2);
+            margin-bottom: 30px;
+        }
+
+        .profile-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .profile-header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .profile-navigation {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-navigation a {
+            text-decoration: none;
+            color: var(--primary-color);
+            margin: 0 15px;
+            font-weight: 600;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .profile-navigation a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .profile-navigation a:hover::after {
+            width: 100%;
+        }
+
+        .profile-section {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .profile-section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .profile-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .profile-details .detail-item {
+            background-color: #f9f9fc;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-details .detail-item .icon {
+            margin-right: 15px;
+            color: var(--primary-color);
+            font-size: 1.5em;
+            width: 40px;
+            text-align: center;
+        }
+
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .hobby-tag {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .profile-footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f6f9;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .profile-details {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="profile-header">
+            <h1>Hi , I Am David</h1>
+            <p>Software Developer | Creative Technologist</p>
+        </header>
+
+        <nav class="profile-navigation">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+
+        <section class="profile-section">
+            <h2>Personal Details</h2>
+            <div class="profile-details">
+                <div class="detail-item">
+                    <div class="icon">📧</div>
+                    <div>
+                        <strong>Email</strong>
+                        <p>david@example.com</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="icon">📞</div>
+                    <div>
+                        <strong>Phone</strong>
+                        <p>+91 9900567546</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="icon">🏠</div>
+                    <div>
+                        <strong>Address</strong>
+                        <p>Bantakal, Vishvothama Nagar, Udupi</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="icon">🎂</div>
+                    <div>
+                        <strong>Age</strong>
+                        <p>25 Years</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Hobbies</h2>
+            <div class="hobbies">
+                <span class="hobby-tag">Reading</span>
+                <span class="hobby-tag">Travelling</span>
+                <span class="hobby-tag">Singing</span>
+            </div>
+        </section>
+
+        <footer class="profile-footer">
+            <p>&copy; 2024 David. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
